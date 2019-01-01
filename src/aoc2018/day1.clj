@@ -9,8 +9,7 @@
       (->> (map #(Integer/parseInt %)))))
 
 (defn part1 [freqs]
-  (->> freqs
-       (reduce +)))
+  (reduce + freqs))
 
 (defn part2 [freqs]
   (->> (cycle freqs)
